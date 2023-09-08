@@ -1,0 +1,91 @@
+/*VARIABLES*/
+:root{
+    --color-principal: #FFFFFF;
+    /*--color-secundary: #04B4E0;*/
+    --color-secundary: #653C28;
+
+    --color-background: #F2F7F9;
+    --color-transparent: transparent;
+
+    --color-icon: #B5B6B7;
+    --color-title: #222222;
+    --color-subtitle: #8A8A8A;
+
+    --color-text: #555;
+
+    --color-amber-hair: #653C28;
+    --color-amber-red: #E62118;
+    --color-amber-gold: #DDAA69;
+
+    --color-border-review: #E5E6E7;
+    --color-company: #653A27;
+    --color-background-contact: #FCFCFC;
+}
+
+.lds-heart {
+    margin: 0 auto;
+    display: block;
+    margin-top: 20px;
+    position: relative;
+    width: 80px;
+    height: 80px;
+    transform: rotate(45deg);
+    transform-origin: 40px 40px;
+    background-color: var(--color-principal);
+}
+
+.lds-heart div {
+    top: 32px;
+    left: 32px;
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    animation: lds-heart 1.2s infinite cubic-bezier(0.215, 0.61, 0.355, 1);
+    background: var(--color-secundary);
+}
+
+.lds-heart div:after,
+.lds-heart div:before {
+    content: " ";
+    position: absolute;
+    display: block;
+    width: 32px;
+    height: 32px;
+    background: var(--color-secundary);
+}
+
+.lds-heart div:before {
+    left: -24px;
+    border-radius: 50% 0 0 50%;
+}
+
+.lds-heart div:after {
+    top: -24px;
+    border-radius: 50% 50% 0 0;
+}
+
+@keyframes lds-heart {
+    0% {
+        transform: scale(0.95);
+    }
+
+    5% {
+        transform: scale(1.1);
+    }
+
+    39% {
+        transform: scale(0.85);
+    }
+
+    45% {
+        transform: scale(1);
+    }
+
+    60% {
+        transform: scale(0.95);
+    }
+
+    100% {
+        transform: scale(0.9);
+    }
+}
